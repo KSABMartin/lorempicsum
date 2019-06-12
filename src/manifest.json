@@ -1,0 +1,9 @@
+{
+   "id": "consid.lorempicsum",
+   "version": "1.0.0",
+   "name": "Lorem Picsum",
+   "author": "Consid AB",
+   "description": "Display images using lorem picsum in sitevision",
+   "helpUrl": "https://help.sitevision.se",
+   "type": "WebApp"
+}
