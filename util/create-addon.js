@@ -10,7 +10,12 @@ var
    var props = properties.getDevProperties(),
       url = `https://${props.username}:${props.password}@${props.domain}/rest-api/1/0/${queryString.escape(props.siteName)}/Addon%20Repository/custommodule`;
 
+      console.log("Försöker skapa " + props.addonName + " på " + props.siteName);
+
    request.post({url: url, form: {name: props.addonName, category: 'Other'}}, (err, httpResponse, body) => {
+
+      console.log("httpResponse : " + httpResponse.statusCode);
+
       if (err) {
          return console.error('Addon creation failed:', err);
       }
